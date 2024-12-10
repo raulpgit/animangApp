@@ -1,5 +1,4 @@
 import {Image, Text, View, Pressable} from "react-native";
-import {linkTo} from "expo-router/build/global-state/routing";
 import {Link} from "expo-router";
 
 export function AnimeCard({anime}){

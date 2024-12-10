@@ -1,7 +1,7 @@
-import {View, Text, Image, FlatList, Button} from "react-native";
+import {View, FlatList, ActivityIndicator} from "react-native";
 import {useEffect, useState} from "react";
-import {getAnimeTop} from "../lib/animeApi";
-import {AnimeCard} from "../components/AnimeCard";
+import {getAnimeTop} from "../../lib/animeApi";
+import {AnimeCard} from "../../components/AnimeCard";
 
 export default function Search(){
     const [animes, setAnimes] = useState([]);
@@ -12,9 +12,13 @@ export default function Search(){
     }, []);
     return (
         <View style={styles.container}>
-            <FlatList data={animes} style={styles.flatlist} numColumns={3} keyExtractor={anime => anime.mal_id}
-                      renderItem={({ item }) => (<AnimeCard key={item.mal_id} anime={item}/>)}>
-            </FlatList>
+            {animes.length === 0? (
+                <ActivityIndicator color={"black"} size={40}/>
+                ):(
+                <FlatList data={animes} style={styles.flatlist} numColumns={3} keyExtractor={anime => anime.mal_id}
+                          renderItem={({ item }) => (<AnimeCard key={item.mal_id} anime={item}/>)}>
+                </FlatList>
+                )}
             {/*<Button title={"Next"} onPress={() => getAnimeTop(num).then((animes) => setAnimes(animes))}/>*/ /*For future use to make pagination*/}
         </View>
     );

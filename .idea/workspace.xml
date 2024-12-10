@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dea4f22-012d-428b-b803-1715cb7647ee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="8dea4f22-012d-428b-b803-1715cb7647ee" name="Changes" comment="first files">
+      <change afterPath="$PROJECT_DIR$/app/(tabs)/_layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(tabs)/history.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(tabs)/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/AnimeSavedCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/animangApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/animangApp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/[id].js" beforeDir="false" afterPath="$PROJECT_DIR$/app/[id].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/_layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/_layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AnimeCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/AnimeCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/DBManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/DBManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/animeApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/animeApi.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -18,15 +29,35 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript File" />
+        <option value="JSX File" />
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;raulpgit&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/raulpgit/animangApp.git&quot;,
+    &quot;accountId&quot;: &quot;37e63b50-ca99-4946-bbaa-07bf493e9aba&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -38,25 +69,102 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/raul3/Desktop/WebThings/animangAppTemplate&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/raul3/AppData/Local/Google/AndroidStudio2023.1/device-explorer/Pixel_3a_API_34_extension_level_7_x86_64/_/data/data/host.exp.exponent/files/SQLite&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\JetBrains\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\raul3\\Desktop\\WebThings\\animangApp\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\raul3\Desktop\WebThings\animangApp\lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raul3\Desktop\WebThings\animangApp\app\(tabs)" />
       <recent name="C:\Users\raul3\Desktop\WebThings\animangApp\lib" />
       <recent name="C:\Users\raul3\Desktop\WebThings\animangApp" />
       <recent name="C:\Users\raul3\Desktop\WebThings\animangApp\app" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="AndroidRunConfigurationType" factoryName="Android App" nameIsGenerated="true">
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -66,6 +174,9 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\raul3\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="8dea4f22-012d-428b-b803-1715cb7647ee" name="Changes" comment="" />
@@ -81,11 +192,50 @@
       <workItem from="1733418479261" duration="6063000" />
       <workItem from="1733504194771" duration="7674000" />
       <workItem from="1733618380608" duration="669000" />
-      <workItem from="1733679827792" duration="700000" />
+      <workItem from="1733679827792" duration="7921000" />
+      <workItem from="1733706107724" duration="4215000" />
+      <workItem from="1733761895926" duration="1078000" />
+      <workItem from="1733763789677" duration="3817000" />
+      <workItem from="1733775112314" duration="3610000" />
+      <workItem from="1733791074200" duration="3362000" />
+      <workItem from="1733844391685" duration="14607000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1733680770554</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733680770554</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first files">
+      <option name="closed" value="true" />
+      <created>1733680975509</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733680975509</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="first files" />
+    <option name="LAST_COMMIT_MESSAGE" value="first files" />
   </component>
 </project>

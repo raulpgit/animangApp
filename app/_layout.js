@@ -1,20 +1,27 @@
-import {Slot} from "expo-router";
-import {View, Text, FlatList} from "react-native";
+import {Slot, Stack} from "expo-router";
+import {View} from "react-native";
 import Footer from "../components/Footer";
 import {StatusBar} from "expo-status-bar";
 import {SafeAreaProvider} from "react-native-safe-area-context";
 import {useSafeAreaInsets} from "react-native-safe-area-context";
 
-export default function Layout({children}) {
+
+export default function StackLayout() {
 
     const insets = useSafeAreaInsets();
+    // const db =  SQLite.openDatabaseSync('AniManga');
+    // setDB("AniManga");
 
   return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center', paddingTop: insets.top, paddingBottom: insets.bottom, backgroundColor: "black"}}>
+    <View style={{flex: 1, paddingTop: insets.top, paddingBottom: insets.bottom}}>
         <StatusBar style="light" />
         <SafeAreaProvider>
-            <Slot />
-            <Footer/>
+            <Stack>
+                <Stack.Screen name="(tabs)" options={{
+                    headerShown: false,
+                }}/>
+            </Stack>
+            {/*<Footer/>*/}
         </SafeAreaProvider>
     </View>
   );
