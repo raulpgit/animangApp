@@ -6,8 +6,10 @@ export function AnimeCard({anime}){
         <View key={anime.mal_id} style={styles.card}>
             <Link asChild href={`/${anime.mal_id}`}>
                 <Pressable>
-                    <Text key={anime.mal_id}>{anime.title}</Text>
                     <Image source={{uri: anime.image}} style={styles.image} />
+                    <View style={{alignItems:"center", justifyContent:"center", paddingLeft:2, paddingRight:2}}>
+                        <Text key={anime.mal_id} style={styles.text}>{anime.title}</Text>
+                    </View>
                 </Pressable>
             </Link>
         </View>
@@ -19,12 +21,21 @@ const styles = {
         // height: 100,
         flex: 1,
         margin: 10,
-        padding: 10,
+        paddingBottom: 3,
+        borderRadius: 10,
         backgroundColor: "lightgray",
     },
     image: {
-        width: 100,
+        flex:1,
+        // width: 100,
         height: 200,
-        borderRadius: 10,
-    }
+        borderTopLeftRadius: 10,
+        borderTopRightRadius: 10,
+    },
+    text: {
+        flex:1,
+        fontSize:15,
+        color: "black",
+        fontWeight: "bold",
+    },
 }

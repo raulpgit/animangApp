@@ -1,6 +1,7 @@
 import {Redirect,Stack} from "expo-router";
 import {useEffect, useState} from "react";
 import {View,Text} from "react-native";
+import {createTable} from "../lib/DBManager";
 
 export default function Index() {
     const [redirect, setRedirect] = useState(false);

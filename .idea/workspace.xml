@@ -4,22 +4,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dea4f22-012d-428b-b803-1715cb7647ee" name="Changes" comment="first files">
-      <change afterPath="$PROJECT_DIR$/app/(tabs)/_layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(tabs)/history.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(tabs)/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/AnimeSavedCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/animangApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/animangApp.iml" afterDir="false" />
+    <list default="true" id="8dea4f22-012d-428b-b803-1715cb7647ee" name="Changes" comment="api + db + home things">
+      <change afterPath="$PROJECT_DIR$/lib/Schemes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/[id].js" beforeDir="false" afterPath="$PROJECT_DIR$/app/[id].js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/_layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/_layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/AnimeCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/AnimeCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/DBManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/DBManager.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/animeApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/animeApi.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
@@ -38,6 +29,7 @@
         <option value="TypeScript File" />
         <option value="JSX File" />
         <option value="JavaScript File" />
+        <option value="tsconfig.json" />
       </list>
     </option>
   </component>
@@ -67,28 +59,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/raul3/AppData/Local/Google/AndroidStudio2023.1/device-explorer/Pixel_3a_API_34_extension_level_7_x86_64/_/data/data/host.exp.exponent/files/SQLite&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\raul3\\Desktop\\WebThings\\animangApp\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/raul3/Desktop/WebThings/evangelion-blog",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater",
+    "show.migrate.to.gradle.popup": "false",
+    "ts.external.directory.path": "C:\\Users\\raul3\\Desktop\\WebThings\\animangApp\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\raul3\Desktop\WebThings\animangApp\lib" />
@@ -198,7 +190,9 @@
       <workItem from="1733763789677" duration="3817000" />
       <workItem from="1733775112314" duration="3610000" />
       <workItem from="1733791074200" duration="3362000" />
-      <workItem from="1733844391685" duration="14607000" />
+      <workItem from="1733844391685" duration="14741000" />
+      <workItem from="1733879336577" duration="484000" />
+      <workItem from="1733935164859" duration="14301000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -216,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733680975509</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="api + db + home things">
+      <option name="closed" value="true" />
+      <created>1733859364055</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733859364055</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +238,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="first files" />
-    <option name="LAST_COMMIT_MESSAGE" value="first files" />
+    <MESSAGE value="api + db + home things" />
+    <option name="LAST_COMMIT_MESSAGE" value="api + db + home things" />
   </component>
 </project>

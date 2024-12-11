@@ -13,7 +13,7 @@ export default function StackLayout() {
     // setDB("AniManga");
 
   return (
-    <View style={{flex: 1, paddingTop: insets.top, paddingBottom: insets.bottom}}>
+    <View style={{flex: 1, paddingTop: insets.top, paddingBottom: insets.bottom, backgroundColor: "black"}}>
         <StatusBar style="light" />
         <SafeAreaProvider>
             <Stack>
