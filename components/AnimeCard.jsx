@@ -1,14 +1,25 @@
 import {Image, Text, View, Pressable} from "react-native";
-import {Link} from "expo-router";
+import {Link, useFocusEffect} from "expo-router";
+import {defaultColor, getSelectedTheme} from "../lib/Schemes";
+import React, { useState } from "react";
 
-export function AnimeCard({anime}){
+
+export function AnimeCard({anime, SchemeColor}){
+    // const [SchemeColor,setSchemeColor] = useState(defaultColor());
+          
+    // useFocusEffect(
+    //     React.useCallback(() => {
+    //         getSelectedTheme().then((value) =>setSchemeColor(value));
+    //     }, [])
+    // );
+
     return(
-        <View key={anime.mal_id} style={styles.card}>
+        <View key={anime.mal_id} style={[styles.card,{backgroundColor: SchemeColor.title}]}>
             <Link asChild href={`/${anime.mal_id}`}>
                 <Pressable>
                     <Image source={{uri: anime.image}} style={styles.image} />
                     <View style={{alignItems:"center", justifyContent:"center", paddingLeft:2, paddingRight:2}}>
-                        <Text key={anime.mal_id} style={styles.text}>{anime.title}</Text>
+                        <Text key={anime.mal_id} style={[styles.text,{color: SchemeColor.background,}]}>{anime.title}</Text>
                     </View>
                 </Pressable>
             </Link>
@@ -22,8 +33,10 @@ const styles = {
         flex: 1,
         margin: 10,
         paddingBottom: 3,
+        // borderColor: color.title,
+        // borderWidth: 1,
         borderRadius: 10,
-        backgroundColor: "lightgray",
+        
     },
     image: {
         flex:1,
@@ -35,7 +48,6 @@ const styles = {
     text: {
         flex:1,
         fontSize:15,
-        color: "black",
         fontWeight: "bold",
     },
 }
